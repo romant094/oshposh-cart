@@ -1,0 +1,312 @@
+.order{
+  position: relative;
+  width: 100%;
+  height: 1871px;
+  padding-top: 695px;
+  background: url(../img/bg/order-bg.png);
+  background-position-x: center;
+  .order-title-block{
+
+    // position: absolute;
+    left:50%;
+    // margin-left: -394px;
+    top: 695px;
+  }
+  &-title{
+    position: relative;
+    width: 516px;
+    height: 96px;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 12px;
+    margin:0 auto;
+    &_image{
+      position: absolute;
+      top: -25px;
+      left: 12px;
+    }
+    &__sub{
+      opacity: 0.8;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 12px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  &-present {
+    margin-top: 115px;
+    
+  }
+  .present-title{
+    position: relative;
+    width: 435px;
+    height: 41px;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 11px;
+    margin:0 auto;
+    &__image{
+      position: absolute;
+      left: 2px;
+      top: -4px;
+    }
+  }
+  .present-arrows{
+    width: 691px;
+    height: 125px;
+    margin:30px auto 0 auto;
+  }
+  .present-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 1087px;
+    height: 121px;
+    margin:0 auto;
+  }
+  .icon-item{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 80px;
+      height: 66px;
+    }
+    &__text{
+      margin-top: 30px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 35px;
+
+    }
+  }
+  .present-holliday{
+    width: 860px;
+    height: 218px;
+    margin:200px auto 0 auto;
+  }
+  .holliday-title{
+    position: relative;
+    // width: 610px;
+    height: 33px;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 11px;
+    text-align: center;
+    &__image{
+      position: absolute;
+      left: 132px;
+      top: -11px;
+    }
+    &__sub{
+      margin-top: 30px;
+      // width: 765px;
+      height: 24px;
+      opacity: 0.8;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 12px;
+      text-align: center;
+    }
+  }
+  .present-title__image-mob{
+    display: none;
+    width: 41px;
+    height: 60px;
+    margin:0 auto;
+  }
+  .present-form{
+    margin-top: 100px;
+    width: 1224px;
+    height: 76px;
+    margin:0 auto;
+    form{
+      display: flex;
+      justify-content: space-between;
+      input{
+        width: 360px;
+        height: 76px;
+        padding-left: 25px;
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+        opacity: 0.8;
+        background: none;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      button{
+        width: 360px;
+        height: 76px;
+        border-radius: 3px;
+        background-color: #fdda24;
+        border: none;
+        color: #000000;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 12px;
+      }
+    }
+  }
+}
+@media(max-width:1270px){
+  .order{
+    // height: 1900px;
+    // background-repeat: no-repeat;
+  }
+  .order .present-form{
+    width: 360px;
+    // margin-top: -100px;
+  }
+  .order .present-form form{
+    // width: 360px;
+    flex-direction: column;
+   margin:0 auto;
+   input{
+     margin-bottom: 20px;
+   }
+  }
+}
+@media(max-width:1112px) {
+  .order {
+    padding-top: 500px;
+   
+    background: url(../img/bg/order-bg-big.png);
+    // background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center;
+    .present-arrows{
+      height: 50px;
+      width: 40px;
+    }
+    .present-arrows_dest {
+      display: none;
+    }
+    .present-title__image-mob{
+      display: block;
+    }
+    .present-icon{
+      width: 300px;
+      flex-direction: column;
+      margin-top: 20px;
+      height: auto;
+    }
+    &-title{
+      // width: 1px;
+      text-align: center;
+      height: 28px;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 12px;
+      margin-bottom: 15px;
+      &__sub{
+        width: 228px;
+        // height: 60px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin:0 auto;
+      }
+    }
+    &-present{
+      margin-top: 50px;
+    }
+    .present-holliday{
+      width: 435px;
+      margin:50px auto 0 auto;
+    }
+    .holliday-title{
+      height: 70px;
+      line-height: 60px;
+      &__image{
+        left: 109px;
+        top: 18px;
+        display: none;
+      }
+      &__sub{
+        height: 65px;
+        line-height: 35px;
+        margin-top: 55px;
+      }
+    }
+  }
+
+  
+  .order .present-form form {
+    // width: 360px;
+    flex-direction: column;
+    margin: 0 auto;
+
+    input {
+      margin-bottom: 20px;
+    }
+  }
+}
+@media(max-width:540px){
+  .order{
+    padding-top: 300px;
+    height: 1600px;
+    background: url(../img/bg/order-bg-mob.png);
+    background-size: cover;
+    &-title{
+      width: 100%;
+      font-size: 29px;
+    }
+    .present-holliday{
+       width: 289px;
+    }
+    .present-title{
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+      
+    }
+    .holliday-title{
+      font-size: 29px;
+      line-height: 37px;
+      &__sub{
+        width: 259px;
+        font-size: 19px;
+        margin:0 auto;
+        margin-top: 20px;
+        line-height: 28px;
+      }
+    }
+    .present-form {
+       width: 260px;
+      form {
+        input {
+          width: 260px;
+          height: 60px;
+        }
+
+        button {
+          width: 260px;
+          height: 60px;
+          font-size: 19px;
+        }
+      }
+    } 
+    
+    
+  }
+.present-title__image-main,
+.present-title__image {
+  display: none;
+}
+
+}
+@media(max-width:415px){
+  .order{
+    padding-top: 215px;
+    background-position-x: 50%;
+  }
+}
